@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIMLEngineers.com - Premier AI & ML consultancy and training. Master AI tools in 12 weeks or become an AI engineer in 14 weeks. Led by Harvard graduates and industry experts.">
+    <meta name="keywords" content="AI consultancy, ML training, AI engineering, machine learning, deep learning, AI certification, professional training">
+    <meta property="og:title" content="AIMLEngineers.com - AI/ML Consultancy & Professional Training">
+    <meta property="og:description" content="Transform your career with comprehensive AI/ML training. From AI tools mastery to full-stack AI engineering.">
+    <meta property="og:url" content="https://aimlengineers.com">
+    <meta property="og:type" content="website">
+
+    <title>AIMLEngineers.com | AI/ML Consultancy & Professional Training</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Gradient effects */
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Card effects */
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Button styles */
+        .primary-button {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            transition: all 0.3s ease;
+        }
+
+        .primary-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.5);
+        }
+
+        /* Glass effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Tab styles */
+        .tab-button {
+            transition: all 0.3s ease;
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            color: white;
+        }
+
+        /* Timeline styles */
+        .timeline-item {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 9px;
+            top: 0;
+            bottom: -30px;
+            width: 2px;
+            background: #e5e7eb;
+        }
+
+        .timeline-item:last-child::before {
+            display: none;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border: 3px solid #3b82f6;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center shadow-lg">
+                        <span class="text-white font-bold text-xl">AI</span>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-900">AIMLEngineers.com</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-gray-900 font-medium transition">Services</a>
+                    <a href="#training" class="text-gray-600 hover:text-gray-900 font-medium transition">Training</a>
+                    <a href="#consultancy" class="text-gray-600 hover:text-gray-900 font-medium transition">Consultancy</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 font-medium transition">About</a>
+                    <a href="#contact" class="primary-button text-white px-6 py-2.5 rounded-lg font-semibold">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 py-20">
+        <div class="absolute inset-0 bg-grid-gray-100 opacity-5"></div>
+        <div class="container mx-auto px-4 relative">
+            <div class="max-w-5xl mx-auto text-center animate-fade-in-up">
+                <div class="inline-flex items-center bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <span class="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
+                    AI/ML Consultancy & Professional Training
+                </div>
+
+                <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
+                    Transform Your Business with
+                    <span class="gradient-text block">AI & Machine Learning</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    Expert consultancy services and comprehensive training programs to help you master AI/ML technologies and drive innovation
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a href="#training" class="primary-button text-white px-8 py-4 rounded-lg font-semibold text-lg inline-block">
+                        Explore Training Programs
+                    </a>
+                    <a href="#consultancy" class="bg-white border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg hover:border-gray-400 transition inline-block">
+                        Consultancy Services
+                    </a>
+                </div>
+
+                <!-- Key Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                    <div class="bg-white p-4 rounded-xl shadow-md">
+                        <span class="text-2xl mb-2 block">🎓</span>
+                        <p class="font-semibold text-gray-800">2 Programs</p>
+                        <p class="text-sm text-gray-600">12-14 Weeks</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-md">
+                        <span class="text-2xl mb-2 block">🌐</span>
+                        <p class="font-semibold text-gray-800">100% Online</p>
+                        <p class="text-sm text-gray-600">Live Classes</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-md">
+                        <span class="text-2xl mb-2 block">👨‍🏫</span>
+                        <p class="font-semibold text-gray-800">Harvard Grad</p>
+                        <p class="text-sm text-gray-600">Expert Trainers</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-md">
+                        <span class="text-2xl mb-2 block">🚀</span>
+                        <p class="font-semibold text-gray-800">Enterprise</p>
+                        <p class="text-sm text-gray-600">Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                        Our <span class="gradient-text">Services</span>
+                    </h2>
+                    <p class="text-xl text-gray-600">Comprehensive AI/ML solutions for every need</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Training Service -->
+                    <div class="feature-card bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200">
+                        <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                            <span class="text-3xl">🎓</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Professional Training</h3>
+                        <p class="text-gray-600 mb-6">Comprehensive AI/ML training programs from beginner to advanced levels</p>
+                        <ul class="space-y-2 text-gray-600 mb-6">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">✓</span>
+                                <span>AI Tools Mastery (12 weeks)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">✓</span>
+                                <span>AI Engineering (14 weeks)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">✓</span>
+                                <span>Live online sessions</span>
+                            </li>
+                        </ul>
+                        <a href="#training" class="text-blue-600 font-semibold hover:text-blue-700">Learn More →</a>
+                    </div>
+
+                    <!-- Consultancy Service -->
+                    <div class="feature-card bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 border border-purple-200">
+                        <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                            <span class="text-3xl">💼</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">AI Consultancy</h3>
+                        <p class="text-gray-600 mb-6">Strategic AI implementation and transformation for enterprises</p>
+                        <ul class="space-y-2 text-gray-600 mb-6">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2">✓</span>
+                                <span>AI strategy development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2">✓</span>
+                                <span>Custom AI solutions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2">✓</span>
+                                <span>Implementation support</span>
+                            </li>
+                        </ul>
+                        <a href="#consultancy" class="text-purple-600 font-semibold hover:text-purple-700">Learn More →</a>
+                    </div>
+
+                    <!-- Development Service -->
+                    <div class="feature-card bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 border border-green-200">
+                        <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-6">
+                            <span class="text-3xl">⚙️</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">AI Development</h3>
+                        <p class="text-gray-600 mb-6">End-to-end AI application development and deployment</p>
+                        <ul class="space-y-2 text-gray-600 mb-6">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>Custom AI applications</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>MLOps & AIOps</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>Cloud deployment</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="text-green-600 font-semibold hover:text-green-700">Get Started →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs Section -->
+    <section id="training" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                        Professional <span class="gradient-text">Training Programs</span>
+                    </h2>
+                    <p class="text-xl text-gray-600">Choose your path to AI/ML mastery</p>
+                </div>
+
+                <!-- Program Cards -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- AI Tools Mastery -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-r from-pink-500 to-purple-500 p-6 text-white">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-2xl font-bold">AI Tools Mastery</h3>
+                                <span class="bg-white/20 px-3 py-1 rounded-full text-sm">12 Weeks</span>
+                            </div>
+                            <p class="text-white/90">Master Gen AI concepts & tools without coding</p>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="mb-6">
+                                <h4 class="font-semibold text-gray-900 mb-3">Program Highlights:</h4>
+                                <ul class="space-y-2 text-gray-600 text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-purple-500 mr-2">✓</span>
+                                        <span>Generative AI fundamentals & tools</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-purple-500 mr-2">✓</span>
+                                        <span>Machine Learning & Deep Learning basics</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-purple-500 mr-2">✓</span>
+                                        <span>Prompt engineering & Agentic AI</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-purple-500 mr-2">✓</span>
+                                        <span>Text, image, video & audio generation</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-purple-500 mr-2">✓</span>
+                                        <span>AI ethics, safety & industry applications</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button onclick="toggleCurriculum('tools')" class="w-full bg-purple-100 text-purple-700 py-3 rounded-lg font-semibold hover:bg-purple-200 transition">
+                                View Full Curriculum ↓
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- AI Engineering -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 p-6 text-white">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-2xl font-bold">AI Engineering</h3>
+                                <span class="bg-white/20 px-3 py-1 rounded-full text-sm">14 Weeks</span>
+                            </div>
+                            <p class="text-white/90">Build & deploy full-stack AI applications</p>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="mb-6">
+                                <h4 class="font-semibold text-gray-900 mb-3">Program Highlights:</h4>
+                                <ul class="space-y-2 text-gray-600 text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-blue-500 mr-2">✓</span>
+                                        <span>Python & Machine Learning fundamentals</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-blue-500 mr-2">✓</span>
+                                        <span>Backend development with FastAPI</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-blue-500 mr-2">✓</span>
+                                        <span>RAG pipelines & vector databases</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-blue-500 mr-2">✓</span>
+                                        <span>Frontend with React</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-blue-500 mr-2">✓</span>
+                                        <span>Cloud deployment & AIOps with AWS</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button onclick="toggleCurriculum('engineering')" class="w-full bg-blue-100 text-blue-700 py-3 rounded-lg font-semibold hover:bg-blue-200 transition">
+                                View Full Curriculum ↓
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Curriculum (Hidden by default) -->
+                <div id="tools-curriculum" class="hidden mb-12">
+                    <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Tools Mastery - 12 Week Curriculum</h3>
+                        <div class="space-y-4">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 1: Basics of Generative AI & AI Tools</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Overview of Gen AI, differences from traditional AI, introduction to Claude, ChatGPT, and Gemini</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 2: Machine Learning Fundamentals</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Supervised vs unsupervised learning, model evaluation, and bias in AI</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 3: Deep Learning Basics</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Neural networks, transformers, and how they power modern AI systems</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 4: Prompt Engineering Fundamentals</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Writing effective prompts for better results; single-turn vs multi-turn prompts</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 5: Agentic AI & Multi-Tool Workflows</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Understanding AI agents, chaining tools together, and automating complex tasks</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 6: Text-to-Image & Multimedia Generation</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Creating visual content, editing images, and using AI for design</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 7: Text-to-Video & Audio Generation</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Producing videos, music, and realistic voiceovers with AI</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 8: AI Ethics & Safety</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Identifying misinformation, detecting deepfakes, and responsible AI usage</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 9: AI for Research & Knowledge Work</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Using AI to search, summarize, and synthesize information efficiently</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 10: AI in Industries</h4>
+                                    <p class="text-sm text-gray-600 mt-1">How AI is transforming marketing, healthcare, education, and creative industries</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 11: Portfolio Assembly</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Organizing and polishing outputs into a cohesive creative portfolio</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900">Week 12: Final Presentation</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Sharing and reviewing completed projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="engineering-curriculum" class="hidden mb-12">
+                    <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Engineering - 14 Week Curriculum</h3>
+                        <div class="space-y-4">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 1: Python Setup & Intro to ML</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Development environment setup, Python basics, and ML concepts</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 2: APIs & Data Ingestion</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Pulling real-time and batch data from APIs and external sources</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 3: Backend with FastAPI</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Building API endpoints for AI-powered features</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 4: Database Management with PostgreSQL</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Structuring and storing application data</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 5: Vector Search & Embeddings</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Understanding embeddings, similarity search, and using vector databases</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 6: Retrieval-Augmented Generation (RAG) Pipeline</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Integrating AI models with retrieval to answer questions from custom data</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 7: Frontend with React</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Designing a user interface for your AI app</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 8: Full-Stack Integration</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Connecting frontend, backend, and AI services</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 9: Containerization (Docker)</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Packaging applications for portability</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 10: Cloud Deployment (Kubernetes)</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Deploying and managing services in the cloud</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 11: AWS AIOps Integration</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Automating AI operations: monitoring, anomaly detection, and performance optimization</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 12: Security & Authentication</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Protecting your app and managing user access</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 13: Scaling & Optimization</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Performance tuning, autoscaling, and cost management</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900">Week 14: Final Project Launch & Presentation</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Deploy and demo your full AI application</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training Features -->
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-2xl">🎯</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Hands-On Learning</h4>
+                        <p class="text-sm text-gray-600">Build real projects and applications from day one</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-2xl">👥</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Small Cohorts</h4>
+                        <p class="text-sm text-gray-600">Personalized attention with limited class sizes</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-2xl">📜</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Certificate</h4>
+                        <p class="text-sm text-gray-600">Industry-recognized certification upon completion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultancy Section -->
+    <section id="consultancy" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                        AI/ML <span class="gradient-text">Consultancy Services</span>
+                    </h2>
+                    <p class="text-xl text-gray-600">Transform your business with strategic AI implementation</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Enterprise AI Solutions</h3>
+                        <p class="text-gray-600 mb-6">
+                            We help organizations leverage AI/ML technologies to drive innovation, improve efficiency, and gain competitive advantage. Our expert consultants bring years of experience in implementing AI solutions across industries.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-blue-600 font-bold">1</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">AI Strategy Development</h4>
+                                    <p class="text-sm text-gray-600">Define your AI roadmap aligned with business objectives</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-purple-600 font-bold">2</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Custom AI Development</h4>
+                                    <p class="text-sm text-gray-600">Build tailored AI solutions for your specific needs</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-green-600 font-bold">3</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Implementation & Integration</h4>
+                                    <p class="text-sm text-gray-600">Seamlessly integrate AI into existing systems</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-orange-600 font-bold">4</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Training & Support</h4>
+                                    <p class="text-sm text-gray-600">Upskill your team and provide ongoing support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Our Expertise</h3>
+
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-white p-4 rounded-lg">
+                                <span class="text-2xl mb-2 block">🤖</span>
+                                <h4 class="font-semibold text-sm">Machine Learning</h4>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <span class="text-2xl mb-2 block">🧠</span>
+                                <h4 class="font-semibold text-sm">Deep Learning</h4>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <span class="text-2xl mb-2 block">💬</span>
+                                <h4 class="font-semibold text-sm">NLP & LLMs</h4>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <span class="text-2xl mb-2 block">👁️</span>
+                                <h4 class="font-semibold text-sm">Computer Vision</h4>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <span class="text-2xl mb-2 block">⚙️</span>
+                                <h4 class="font-semibold text-sm">MLOps & AIOps</h4>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <span class="text-2xl mb-2 block">☁️</span>
+                                <h4 class="font-semibold text-sm">Cloud AI</h4>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-lg text-center">
+                            <p class="font-semibold mb-2">Ready to transform your business?</p>
+                            <a href="#contact" class="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                                Schedule Consultation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                        Learn from <span class="gradient-text">Industry Experts</span>
+                    </h2>
+                    <p class="text-xl text-gray-600">World-class training from Harvard graduates and leading AI professionals</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-gradient-to-br from-blue-500 to-purple-600 p-8 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <span class="text-5xl">👨‍🏫</span>
+                                </div>
+                                <p class="text-white font-semibold">Expert Trainers</p>
+                            </div>
+                        </div>
+
+                        <div class="md:w-2/3 p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Training Team</h3>
+
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold">Harvard Graduates</p>
+                                        <p class="text-gray-600">Our lead instructors are Harvard University graduates with specialization in Data Science and AI Engineering</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold">Industry Experience</p>
+                                        <p class="text-gray-600">20+ years of combined experience in AI/ML product development at leading tech companies</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold">Real-World Expertise</p>
+                                        <p class="text-gray-600">Currently leading AI transformation initiatives at Fortune 500 companies</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold">Dedicated Support</p>
+                                        <p class="text-gray-600">Personalized mentorship and career guidance throughout your learning journey</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                                <p class="text-sm text-blue-700">
+                                    <span class="font-semibold">Our Mission:</span> Bridge the gap between academic theory and real-world AI implementation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule & Pricing -->
+    <section class="py-20 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-4">Flexible Learning Options</h2>
+                    <p class="text-xl opacity-90">Join from anywhere in the world • Live online sessions • Recorded lectures</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Schedule Info -->
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6">Class Schedule</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold text-white/90 mb-2">Weekday Evening Batch</h4>
+                                <p class="text-white/80">Monday - Thursday: 7:00 PM - 11:00 PM EST</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white/90 mb-2">Weekend Batch</h4>
+                                <p class="text-white/80">Saturday & Sunday: 7:00 AM - 2:00 PM EST</p>
+                            </div>
+                            <div class="pt-4 border-t border-white/20">
+                                <p class="text-white/80 text-sm">✓ All sessions recorded for review</p>
+                                <p class="text-white/80 text-sm">✓ 24/7 access to course materials</p>
+                                <p class="text-white/80 text-sm">✓ Dedicated Slack community</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Info -->
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6">Investment</h3>
+                        <div class="space-y-4">
+                            <div class="bg-white/20 rounded-lg p-4">
+                                <h4 class="font-semibold text-lg">AI Tools Mastery</h4>
+                                <p class="text-3xl font-bold mt-2">$300</p>
+                                <p class="text-white/80 text-sm">12-week program</p>
+                            </div>
+                            <div class="bg-white/20 rounded-lg p-4">
+                                <h4 class="font-semibold text-lg">AI Engineering</h4>
+                                <p class="text-3xl font-bold mt-2">$500</p>
+                                <p class="text-white/80 text-sm">14-week program</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-xl mb-6">Next Cohort Starts January 2026</p>
+                    <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition inline-block">
+                        Enroll Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                        Get Started <span class="gradient-text">Today</span>
+                    </h2>
+                    <p class="text-xl text-gray-600">Contact us for training enrollment or consultancy services</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Contact Info -->
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
+
+                        <div class="space-y-4">
+                            <a href="mailto:contact@AIMLEngineers.com" class="flex items-center p-4 bg-white rounded-lg hover:shadow-md transition">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">Email</p>
+                                    <p class="font-semibold text-gray-900">contact@AIMLEngineers.com</p>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/15168510898" target="_blank" class="flex items-center p-4 bg-white rounded-lg hover:shadow-md transition">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">WhatsApp</p>
+                                    <p class="font-semibold text-gray-900">+1-516-851-0898</p>
+                                </div>
+                            </a>
+
+                            <a href="tel:+15168510898" class="flex items-center p-4 bg-white rounded-lg hover:shadow-md transition">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">Phone</p>
+                                    <p class="font-semibold text-gray-900">+1-516-851-0898</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-blue-100 rounded-lg">
+                            <p class="text-sm text-blue-700 text-center">
+                                Response time: Within 24 hours
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Inquiry Form -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Quick Inquiry</h3>
+
+                        <form action="mailto:contact@AIMLEngineers.com" method="post" enctype="text/plain">
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                    <input type="text" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                    <input type="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Interest</label>
+                                    <select name="interest" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                        <option>AI Tools Mastery Training</option>
+                                        <option>AI Engineering Training</option>
+                                        <option>Consultancy Services</option>
+                                        <option>Corporate Training</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                    <textarea name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full primary-button text-white py-3 rounded-lg font-semibold">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Do I need coding experience for the AI Tools Mastery program?</h3>
+                        <p class="text-gray-600">No coding experience is required for the AI Tools Mastery program. It's designed for beginners and focuses on using AI tools without programming.</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Can I join from outside the United States?</h3>
+                        <p class="text-gray-600">Yes! Our programs are 100% online and designed for a global audience. We have students from over 20 countries.</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">What if I miss a live session?</h3>
+                        <p class="text-gray-600">All sessions are recorded and available within 24 hours. You can watch at your convenience and ask questions in our community forum.</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Do you offer corporate training?</h3>
+                        <p class="text-gray-600">Yes, we offer customized corporate training programs tailored to your organization's specific needs. Contact us for details.</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">What kind of certificate will I receive?</h3>
+                        <p class="text-gray-600">Upon successful completion, you'll receive an industry-recognized certificate from AIMLEngineers that you can add to your LinkedIn profile and resume.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
+                                <span class="text-white font-bold">AI</span>
+                            </div>
+                            <span class="text-xl font-bold text-white">AIMLEngineers</span>
+                        </div>
+                        <p class="text-sm">
+                            Premier AI/ML consultancy and training provider
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-white mb-4">Services</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#training" class="hover:text-white transition">Training Programs</a></li>
+                            <li><a href="#consultancy" class="hover:text-white transition">Consultancy</a></li>
+                            <li><a href="#contact" class="hover:text-white transition">Corporate Training</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-white mb-4">Programs</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#training" class="hover:text-white transition">AI Tools Mastery</a></li>
+                            <li><a href="#training" class="hover:text-white transition">AI Engineering</a></li>
+                            <li><a href="#contact" class="hover:text-white transition">Custom Solutions</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-white mb-4">Contact</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>Email: contact@AIMLEngineers.com</li>
+                            <li>WhatsApp: +1-516-851-0898</li>
+                            <li>Phone: +1-516-851-0898</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 pt-8 text-center">
+                    <p class="text-sm">
+                        © 2025 AIMLEngineers.com All rights reserved. |
+                        <a href="#" class="hover:text-white transition">Privacy Policy</a> |
+                        <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleCurriculum(type) {
+            const toolsCurriculum = document.getElementById('tools-curriculum');
+            const engineeringCurriculum = document.getElementById('engineering-curriculum');
+
+            if (type === 'tools') {
+                toolsCurriculum.classList.toggle('hidden');
+                engineeringCurriculum.classList.add('hidden');
+            } else if (type === 'engineering') {
+                engineeringCurriculum.classList.toggle('hidden');
+                toolsCurriculum.classList.add('hidden');
+            }
+        }
+    </script>
+
+</body>
+</html>
