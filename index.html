@@ -155,10 +155,30 @@
         /* Ensure curriculum sections are properly hidden */
         .curriculum-section {
             display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
         .curriculum-section.active {
             display: block;
+            opacity: 1;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Add spacing for program blocks */
+        .program-block {
+            scroll-margin-top: 80px;
         }
     </style>
 </head>
@@ -341,288 +361,293 @@
                     <p class="text-xl text-gray-600">Choose your path to AI/ML mastery</p>
                 </div>
 
-                <!-- Program Cards -->
-                <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    <!-- AI Tools Mastery -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <div class="bg-gradient-to-r from-pink-500 to-purple-500 p-6 text-white">
-                            <div class="flex items-center justify-between mb-2">
-                                <h3 class="text-2xl font-bold">AI Tools Mastery</h3>
-                                <span class="bg-white/20 px-3 py-1 rounded-full text-sm">12 Weeks</span>
+                <!-- Programs Container with both programs visible -->
+                <div class="space-y-8">
+                    <!-- AI Tools Mastery Program -->
+                    <div class="program-block">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                            <div class="bg-gradient-to-r from-pink-500 to-purple-500 p-6 text-white">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-2xl font-bold">AI Tools Mastery</h3>
+                                    <span class="bg-white/20 px-3 py-1 rounded-full text-sm">12 Weeks</span>
+                                </div>
+                                <p class="text-white/90">Master Gen AI concepts & tools without coding</p>
                             </div>
-                            <p class="text-white/90">Master Gen AI concepts & tools without coding</p>
+
+                            <div class="p-6">
+                                <div class="mb-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3">Program Highlights:</h4>
+                                    <ul class="space-y-2 text-gray-600 text-sm">
+                                        <li class="flex items-start">
+                                            <span class="text-purple-500 mr-2">✓</span>
+                                            <span>Generative AI fundamentals & tools</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-purple-500 mr-2">✓</span>
+                                            <span>Machine Learning & Deep Learning basics</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-purple-500 mr-2">✓</span>
+                                            <span>Prompt engineering & Agentic AI</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-purple-500 mr-2">✓</span>
+                                            <span>Text, image, video & audio generation</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-purple-500 mr-2">✓</span>
+                                            <span>AI ethics, safety & industry applications</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <button data-curriculum="tools" class="curriculum-btn w-full bg-purple-100 text-purple-700 py-3 rounded-lg font-semibold hover:bg-purple-200 transition">
+                                    View Full Curriculum <span class="arrow-icon inline-block">↓</span>
+                                </button>
+                            </div>
                         </div>
 
-                        <div class="p-6">
-                            <div class="mb-6">
-                                <h4 class="font-semibold text-gray-900 mb-3">Program Highlights:</h4>
-                                <ul class="space-y-2 text-gray-600 text-sm">
-                                    <li class="flex items-start">
-                                        <span class="text-purple-500 mr-2">✓</span>
-                                        <span>Generative AI fundamentals & tools</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-purple-500 mr-2">✓</span>
-                                        <span>Machine Learning & Deep Learning basics</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-purple-500 mr-2">✓</span>
-                                        <span>Prompt engineering & Agentic AI</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-purple-500 mr-2">✓</span>
-                                        <span>Text, image, video & audio generation</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-purple-500 mr-2">✓</span>
-                                        <span>AI ethics, safety & industry applications</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <button data-curriculum="tools" class="curriculum-btn w-full bg-purple-100 text-purple-700 py-3 rounded-lg font-semibold hover:bg-purple-200 transition">
-                                View Full Curriculum <span class="arrow-icon inline-block">↓</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- AI Engineering -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 p-6 text-white">
-                            <div class="flex items-center justify-between mb-2">
-                                <h3 class="text-2xl font-bold">AI Engineering</h3>
-                                <span class="bg-white/20 px-3 py-1 rounded-full text-sm">14 Weeks</span>
-                            </div>
-                            <p class="text-white/90">Build & deploy full-stack AI applications</p>
-                        </div>
-
-                        <div class="p-6">
-                            <div class="mb-6">
-                                <h4 class="font-semibold text-gray-900 mb-3">Program Highlights:</h4>
-                                <ul class="space-y-2 text-gray-600 text-sm">
-                                    <li class="flex items-start">
-                                        <span class="text-blue-500 mr-2">✓</span>
-                                        <span>Python & Machine Learning fundamentals</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-blue-500 mr-2">✓</span>
-                                        <span>Backend development with FastAPI</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-blue-500 mr-2">✓</span>
-                                        <span>RAG pipelines & vector databases</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-blue-500 mr-2">✓</span>
-                                        <span>Frontend with React</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-blue-500 mr-2">✓</span>
-                                        <span>Cloud deployment & AIOps with AWS</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <button data-curriculum="engineering" class="curriculum-btn w-full bg-blue-100 text-blue-700 py-3 rounded-lg font-semibold hover:bg-blue-200 transition">
-                                View Full Curriculum <span class="arrow-icon inline-block">↓</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Detailed Curriculum (Hidden by default) -->
-                <div id="tools-curriculum" class="curriculum-section mb-12">
-                    <div class="bg-white rounded-2xl shadow-lg p-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Tools Mastery - 12 Week Curriculum</h3>
-                        <div class="space-y-4">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 1: Basics of Generative AI & AI Tools</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Overview of Gen AI, differences from traditional AI, introduction to Claude, ChatGPT, and Gemini</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 2: Machine Learning Fundamentals</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Supervised vs unsupervised learning, model evaluation, and bias in AI</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 3: Deep Learning Basics</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Neural networks, transformers, and how they power modern AI systems</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 4: Prompt Engineering Fundamentals</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Writing effective prompts for better results; single-turn vs multi-turn prompts</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 5: Agentic AI & Multi-Tool Workflows</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Understanding AI agents, chaining tools together, and automating complex tasks</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 6: Text-to-Image & Multimedia Generation</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Creating visual content, editing images, and using AI for design</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 7: Text-to-Video & Audio Generation</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Producing videos, music, and realistic voiceovers with AI</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 8: AI Ethics & Safety</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Identifying misinformation, detecting deepfakes, and responsible AI usage</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 9: AI for Research & Knowledge Work</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Using AI to search, summarize, and synthesize information efficiently</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 10: AI in Industries</h4>
-                                    <p class="text-sm text-gray-600 mt-1">How AI is transforming marketing, healthcare, education, and creative industries</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 11: Portfolio Assembly</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Organizing and polishing outputs into a cohesive creative portfolio</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-purple-900">Week 12: Final Presentation</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Sharing and reviewing completed projects</p>
+                        <!-- AI Tools Mastery Curriculum (Hidden by default) -->
+                        <div id="tools-curriculum" class="curriculum-section mt-6">
+                            <div class="bg-white rounded-2xl shadow-lg p-8 border-2 border-purple-200">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Tools Mastery - 12 Week Curriculum</h3>
+                                <div class="space-y-4">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 1: Basics of Generative AI & AI Tools</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Overview of Gen AI, differences from traditional AI, introduction to Claude, ChatGPT, and Gemini</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 2: Machine Learning Fundamentals</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Supervised vs unsupervised learning, model evaluation, and bias in AI</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 3: Deep Learning Basics</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Neural networks, transformers, and how they power modern AI systems</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 4: Prompt Engineering Fundamentals</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Writing effective prompts for better results; single-turn vs multi-turn prompts</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 5: Agentic AI & Multi-Tool Workflows</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Understanding AI agents, chaining tools together, and automating complex tasks</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 6: Text-to-Image & Multimedia Generation</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Creating visual content, editing images, and using AI for design</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 7: Text-to-Video & Audio Generation</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Producing videos, music, and realistic voiceovers with AI</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 8: AI Ethics & Safety</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Identifying misinformation, detecting deepfakes, and responsible AI usage</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 9: AI for Research & Knowledge Work</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Using AI to search, summarize, and synthesize information efficiently</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 10: AI in Industries</h4>
+                                            <p class="text-sm text-gray-600 mt-1">How AI is transforming marketing, healthcare, education, and creative industries</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 11: Portfolio Assembly</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Organizing and polishing outputs into a cohesive creative portfolio</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-purple-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-purple-900">Week 12: Final Presentation</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Sharing and reviewing completed projects</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="engineering-curriculum" class="curriculum-section mb-12">
-                    <div class="bg-white rounded-2xl shadow-lg p-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Engineering - 14 Week Curriculum</h3>
-                        <div class="space-y-4">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 1: Python Setup & Intro to ML</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Development environment setup, Python basics, and ML concepts</p>
+                    <!-- AI Engineering Program -->
+                    <div class="program-block">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-500 to-indigo-500 p-6 text-white">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-2xl font-bold">AI Engineering</h3>
+                                    <span class="bg-white/20 px-3 py-1 rounded-full text-sm">14 Weeks</span>
                                 </div>
+                                <p class="text-white/90">Build & deploy full-stack AI applications</p>
                             </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 2: APIs & Data Ingestion</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Pulling real-time and batch data from APIs and external sources</p>
+
+                            <div class="p-6">
+                                <div class="mb-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3">Program Highlights:</h4>
+                                    <ul class="space-y-2 text-gray-600 text-sm">
+                                        <li class="flex items-start">
+                                            <span class="text-blue-500 mr-2">✓</span>
+                                            <span>Python & Machine Learning fundamentals</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-blue-500 mr-2">✓</span>
+                                            <span>Backend development with FastAPI</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-blue-500 mr-2">✓</span>
+                                            <span>RAG pipelines & vector databases</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-blue-500 mr-2">✓</span>
+                                            <span>Frontend with React</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-blue-500 mr-2">✓</span>
+                                            <span>Cloud deployment & AIOps with AWS</span>
+                                        </li>
+                                    </ul>
                                 </div>
+
+                                <button data-curriculum="engineering" class="curriculum-btn w-full bg-blue-100 text-blue-700 py-3 rounded-lg font-semibold hover:bg-blue-200 transition">
+                                    View Full Curriculum <span class="arrow-icon inline-block">↓</span>
+                                </button>
                             </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 3: Backend with FastAPI</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Building API endpoints for AI-powered features</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 4: Database Management with PostgreSQL</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Structuring and storing application data</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 5: Vector Search & Embeddings</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Understanding embeddings, similarity search, and using vector databases</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 6: Retrieval-Augmented Generation (RAG) Pipeline</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Integrating AI models with retrieval to answer questions from custom data</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 7: Frontend with React</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Designing a user interface for your AI app</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 8: Full-Stack Integration</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Connecting frontend, backend, and AI services</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 9: Containerization (Docker)</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Packaging applications for portability</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 10: Cloud Deployment (Kubernetes)</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Deploying and managing services in the cloud</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 11: AWS AIOps Integration</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Automating AI operations: monitoring, anomaly detection, and performance optimization</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 12: Security & Authentication</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Protecting your app and managing user access</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 13: Scaling & Optimization</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Performance tuning, autoscaling, and cost management</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-semibold text-blue-900">Week 14: Final Project Launch & Presentation</h4>
-                                    <p class="text-sm text-gray-600 mt-1">Deploy and demo your full AI application</p>
+                        </div>
+
+                        <!-- AI Engineering Curriculum (Hidden by default) -->
+                        <div id="engineering-curriculum" class="curriculum-section mt-6">
+                            <div class="bg-white rounded-2xl shadow-lg p-8 border-2 border-blue-200">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Engineering - 14 Week Curriculum</h3>
+                                <div class="space-y-4">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 1: Python Setup & Intro to ML</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Development environment setup, Python basics, and ML concepts</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 2: APIs & Data Ingestion</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Pulling real-time and batch data from APIs and external sources</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 3: Backend with FastAPI</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Building API endpoints for AI-powered features</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 4: Database Management with PostgreSQL</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Structuring and storing application data</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 5: Vector Search & Embeddings</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Understanding embeddings, similarity search, and using vector databases</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 6: Retrieval-Augmented Generation (RAG) Pipeline</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Integrating AI models with retrieval to answer questions from custom data</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 7: Frontend with React</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Designing a user interface for your AI app</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 8: Full-Stack Integration</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Connecting frontend, backend, and AI services</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 9: Containerization (Docker)</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Packaging applications for portability</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 10: Cloud Deployment (Kubernetes)</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Deploying and managing services in the cloud</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 11: AWS AIOps Integration</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Automating AI operations: monitoring, anomaly detection, and performance optimization</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 12: Security & Authentication</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Protecting your app and managing user access</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 13: Scaling & Optimization</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Performance tuning, autoscaling, and cost management</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-blue-900">Week 14: Final Project Launch & Presentation</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Deploy and demo your full AI application</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -630,7 +655,7 @@
                 </div>
 
                 <!-- Training Features -->
-                <div class="grid md:grid-cols-3 gap-6">
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
                     <div class="bg-white p-6 rounded-xl shadow-md">
                         <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                             <span class="text-2xl">🎯</span>
@@ -1105,32 +1130,42 @@
             const toolsBtn = document.querySelector('[data-curriculum="tools"]');
             const engineeringBtn = document.querySelector('[data-curriculum="engineering"]');
 
-            const toolsArrow = toolsBtn.querySelector('.arrow-icon');
-            const engineeringArrow = engineeringBtn.querySelector('.arrow-icon');
+            const toolsArrow = toolsBtn ? toolsBtn.querySelector('.arrow-icon') : null;
+            const engineeringArrow = engineeringBtn ? engineeringBtn.querySelector('.arrow-icon') : null;
 
-            if (type === 'tools') {
+            if (type === 'tools' && toolsCurriculum) {
                 // Toggle tools curriculum
                 if (toolsCurriculum.classList.contains('active')) {
                     toolsCurriculum.classList.remove('active');
-                    toolsArrow.classList.remove('rotated');
+                    if (toolsArrow) toolsArrow.classList.remove('rotated');
                 } else {
                     toolsCurriculum.classList.add('active');
-                    toolsArrow.classList.add('rotated');
+                    if (toolsArrow) toolsArrow.classList.add('rotated');
                     // Hide engineering curriculum if open
-                    engineeringCurriculum.classList.remove('active');
-                    engineeringArrow.classList.remove('rotated');
+                    if (engineeringCurriculum) engineeringCurriculum.classList.remove('active');
+                    if (engineeringArrow) engineeringArrow.classList.remove('rotated');
+
+                    // Smooth scroll to the curriculum section after a small delay
+                    setTimeout(() => {
+                        toolsCurriculum.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, 100);
                 }
-            } else if (type === 'engineering') {
+            } else if (type === 'engineering' && engineeringCurriculum) {
                 // Toggle engineering curriculum
                 if (engineeringCurriculum.classList.contains('active')) {
                     engineeringCurriculum.classList.remove('active');
-                    engineeringArrow.classList.remove('rotated');
+                    if (engineeringArrow) engineeringArrow.classList.remove('rotated');
                 } else {
                     engineeringCurriculum.classList.add('active');
-                    engineeringArrow.classList.add('rotated');
+                    if (engineeringArrow) engineeringArrow.classList.add('rotated');
                     // Hide tools curriculum if open
-                    toolsCurriculum.classList.remove('active');
-                    toolsArrow.classList.remove('rotated');
+                    if (toolsCurriculum) toolsCurriculum.classList.remove('active');
+                    if (toolsArrow) toolsArrow.classList.remove('rotated');
+
+                    // Smooth scroll to the curriculum section after a small delay
+                    setTimeout(() => {
+                        engineeringCurriculum.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, 100);
                 }
             }
         }
