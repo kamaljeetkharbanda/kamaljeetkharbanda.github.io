@@ -151,6 +151,15 @@
         .arrow-icon.rotated {
             transform: rotate(180deg);
         }
+
+        /* Ensure curriculum sections are properly hidden */
+        .curriculum-section {
+            display: none;
+        }
+
+        .curriculum-section.active {
+            display: block;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
@@ -371,8 +380,8 @@
                                 </ul>
                             </div>
 
-                            <button id="tools-btn" onclick="toggleCurriculum('tools')" class="w-full bg-purple-100 text-purple-700 py-3 rounded-lg font-semibold hover:bg-purple-200 transition">
-                                <span id="tools-text">View Full Curriculum</span> <span id="tools-arrow" class="arrow-icon">↓</span>
+                            <button data-curriculum="tools" class="curriculum-btn w-full bg-purple-100 text-purple-700 py-3 rounded-lg font-semibold hover:bg-purple-200 transition">
+                                View Full Curriculum <span class="arrow-icon inline-block">↓</span>
                             </button>
                         </div>
                     </div>
@@ -414,15 +423,15 @@
                                 </ul>
                             </div>
 
-                            <button id="engineering-btn" onclick="toggleCurriculum('engineering')" class="w-full bg-blue-100 text-blue-700 py-3 rounded-lg font-semibold hover:bg-blue-200 transition">
-                                <span id="engineering-text">View Full Curriculum</span> <span id="engineering-arrow" class="arrow-icon">↓</span>
+                            <button data-curriculum="engineering" class="curriculum-btn w-full bg-blue-100 text-blue-700 py-3 rounded-lg font-semibold hover:bg-blue-200 transition">
+                                View Full Curriculum <span class="arrow-icon inline-block">↓</span>
                             </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Detailed Curriculum (Hidden by default) -->
-                <div id="tools-curriculum" class="hidden mb-12">
+                <div id="tools-curriculum" class="curriculum-section mb-12">
                     <div class="bg-white rounded-2xl shadow-lg p-8">
                         <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Tools Mastery - 12 Week Curriculum</h3>
                         <div class="space-y-4">
@@ -514,7 +523,7 @@
                     </div>
                 </div>
 
-                <div id="engineering-curriculum" class="hidden mb-12">
+                <div id="engineering-curriculum" class="curriculum-section mb-12">
                     <div class="bg-white rounded-2xl shadow-lg p-8">
                         <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Engineering - 14 Week Curriculum</h3>
                         <div class="space-y-4">
@@ -1074,49 +1083,55 @@
     </footer>
 
     <script>
+        // Ensure DOM is loaded before running script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all curriculum buttons
+            const buttons = document.querySelectorAll('.curriculum-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const type = this.getAttribute('data-curriculum');
+                    toggleCurriculum(type);
+                });
+            });
+        });
+
         function toggleCurriculum(type) {
             const toolsCurriculum = document.getElementById('tools-curriculum');
             const engineeringCurriculum = document.getElementById('engineering-curriculum');
-            const toolsArrow = document.getElementById('tools-arrow');
-            const engineeringArrow = document.getElementById('engineering-arrow');
-            const toolsText = document.getElementById('tools-text');
-            const engineeringText = document.getElementById('engineering-text');
+
+            // Get the buttons and their arrow elements
+            const toolsBtn = document.querySelector('[data-curriculum="tools"]');
+            const engineeringBtn = document.querySelector('[data-curriculum="engineering"]');
+
+            const toolsArrow = toolsBtn.querySelector('.arrow-icon');
+            const engineeringArrow = engineeringBtn.querySelector('.arrow-icon');
 
             if (type === 'tools') {
-                const isHidden = toolsCurriculum.classList.contains('hidden');
-                toolsCurriculum.classList.toggle('hidden');
-                engineeringCurriculum.classList.add('hidden');
-
-                // Update arrow and text for tools
-                if (isHidden) {
-                    toolsArrow.classList.add('rotated');
-                    toolsText.textContent = 'Hide Curriculum';
-                } else {
+                // Toggle tools curriculum
+                if (toolsCurriculum.classList.contains('active')) {
+                    toolsCurriculum.classList.remove('active');
                     toolsArrow.classList.remove('rotated');
-                    toolsText.textContent = 'View Full Curriculum';
-                }
-
-                // Reset engineering arrow and text
-                engineeringArrow.classList.remove('rotated');
-                engineeringText.textContent = 'View Full Curriculum';
-
-            } else if (type === 'engineering') {
-                const isHidden = engineeringCurriculum.classList.contains('hidden');
-                engineeringCurriculum.classList.toggle('hidden');
-                toolsCurriculum.classList.add('hidden');
-
-                // Update arrow and text for engineering
-                if (isHidden) {
-                    engineeringArrow.classList.add('rotated');
-                    engineeringText.textContent = 'Hide Curriculum';
                 } else {
+                    toolsCurriculum.classList.add('active');
+                    toolsArrow.classList.add('rotated');
+                    // Hide engineering curriculum if open
+                    engineeringCurriculum.classList.remove('active');
                     engineeringArrow.classList.remove('rotated');
-                    engineeringText.textContent = 'View Full Curriculum';
                 }
-
-                // Reset tools arrow and text
-                toolsArrow.classList.remove('rotated');
-                toolsText.textContent = 'View Full Curriculum';
+            } else if (type === 'engineering') {
+                // Toggle engineering curriculum
+                if (engineeringCurriculum.classList.contains('active')) {
+                    engineeringCurriculum.classList.remove('active');
+                    engineeringArrow.classList.remove('rotated');
+                } else {
+                    engineeringCurriculum.classList.add('active');
+                    engineeringArrow.classList.add('rotated');
+                    // Hide tools curriculum if open
+                    toolsCurriculum.classList.remove('active');
+                    toolsArrow.classList.remove('rotated');
+                }
             }
         }
     </script>
