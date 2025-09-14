@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AIMLEngineers.com - Premier AI & ML consultancy and training. Master AI tools in 12 weeks or become an AI engineer in 14 weeks. Led by Harvard graduates and industry experts.">
-    <meta name="keywords" content="AI consultancy, ML training, AI engineering, machine learning, deep learning, AI certification, professional training">
+    <meta name="description" content="AIMLEngineers.com - Premier AI & ML consultancy and training. Start with AI foundations, then choose your path: low-code/no-code tools or pro-code engineering. Led by Harvard graduates and industry experts.">
+    <meta name="keywords" content="AI consultancy, ML training, AI engineering, machine learning, deep learning, AI certification, professional training, Long Island NY">
     <meta property="og:title" content="AIMLEngineers.com - AI/ML Consultancy & Professional Training">
-    <meta property="og:description" content="Transform your career with comprehensive AI/ML training. From AI tools mastery to full-stack AI engineering.">
+    <meta property="og:description" content="Transform your career with comprehensive AI/ML training. From foundational concepts to advanced engineering. Long Island, NY or Online.">
     <meta property="og:url" content="https://aimlengineers.com">
     <meta property="og:type" content="website">
 
@@ -101,16 +101,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Tab styles */
-        .tab-button {
-            transition: all 0.3s ease;
-        }
-
-        .tab-button.active {
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-            color: white;
-        }
-
         /* Timeline styles */
         .timeline-item {
             position: relative;
@@ -180,6 +170,43 @@
         .program-block {
             scroll-margin-top: 80px;
         }
+
+        /* Learning path styles */
+        .path-arrow {
+            width: 40px;
+            height: 2px;
+            background: #9ca3af;
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .path-arrow::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -4px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid #9ca3af;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        @media (min-width: 768px) {
+            .path-arrow {
+                width: 2px;
+                height: 40px;
+            }
+            .path-arrow::after {
+                right: -4px;
+                top: auto;
+                bottom: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 10px solid #9ca3af;
+                border-bottom: none;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
@@ -218,17 +245,17 @@
                 </div>
 
                 <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
-                    Transform Your Business with
-                    <span class="gradient-text block">AI & Machine Learning</span>
+                    Master AI from Concepts to
+                    <span class="gradient-text block">Production Engineering</span>
                 </h1>
 
                 <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-                    Expert consultancy services and comprehensive training programs to help you master AI/ML technologies and drive innovation
+                    Start with AI foundations, then choose your path: Low-Code/No-Code tools mastery or Full-Stack AI Engineering
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                     <a href="#training" class="primary-button text-white px-8 py-4 rounded-lg font-semibold text-lg inline-block">
-                        Explore Training Programs
+                        Explore Training Pathways
                     </a>
                     <a href="#consultancy" class="bg-white border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg hover:border-gray-400 transition inline-block">
                         Consultancy Services
@@ -238,14 +265,14 @@
                 <!-- Key Stats -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                     <div class="bg-white p-4 rounded-xl shadow-md">
-                        <span class="text-2xl mb-2 block">🎓</span>
-                        <p class="font-semibold text-gray-800">2 Programs</p>
-                        <p class="text-sm text-gray-600">12-14 Weeks</p>
+                        <span class="text-2xl mb-2 block">🎯</span>
+                        <p class="font-semibold text-gray-800">3 Modules</p>
+                        <p class="text-sm text-gray-600">Foundation + 2 Tracks</p>
                     </div>
                     <div class="bg-white p-4 rounded-xl shadow-md">
-                        <span class="text-2xl mb-2 block">🌐</span>
-                        <p class="font-semibold text-gray-800">100% Online</p>
-                        <p class="text-sm text-gray-600">Live Classes</p>
+                        <span class="text-2xl mb-2 block">📍</span>
+                        <p class="font-semibold text-gray-800">Flexible Format</p>
+                        <p class="text-sm text-gray-600">Long Island, NY or Online/Live Classes</p>
                     </div>
                     <div class="bg-white p-4 rounded-xl shadow-md">
                         <span class="text-2xl mb-2 block">👨‍🏫</span>
@@ -254,8 +281,8 @@
                     </div>
                     <div class="bg-white p-4 rounded-xl shadow-md">
                         <span class="text-2xl mb-2 block">🚀</span>
-                        <p class="font-semibold text-gray-800">Enterprise</p>
-                        <p class="text-sm text-gray-600">Solutions</p>
+                        <p class="font-semibold text-gray-800">Hands-On</p>
+                        <p class="text-sm text-gray-600">Real Projects</p>
                     </div>
                 </div>
             </div>
@@ -280,19 +307,19 @@
                             <span class="text-3xl">🎓</span>
                         </div>
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">Professional Training</h3>
-                        <p class="text-gray-600 mb-6">Comprehensive AI/ML training programs from beginner to advanced levels</p>
+                        <p class="text-gray-600 mb-6">Comprehensive AI/ML training from foundations to advanced engineering</p>
                         <ul class="space-y-2 text-gray-600 mb-6">
                             <li class="flex items-start">
-                                <span class="text-blue-500 mr-2">✓</span>
-                                <span>AI Tools Mastery (12 weeks)</span>
+                                <span class="text-blue-500 mr-2">✔</span>
+                                <span>4-week AI foundations</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-blue-500 mr-2">✓</span>
-                                <span>AI Engineering (14 weeks)</span>
+                                <span class="text-blue-500 mr-2">✔</span>
+                                <span>8-week low-code track</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-blue-500 mr-2">✓</span>
-                                <span>Live online sessions</span>
+                                <span class="text-blue-500 mr-2">✔</span>
+                                <span>16-week engineering track</span>
                             </li>
                         </ul>
                         <a href="#training" class="text-blue-600 font-semibold hover:text-blue-700">Learn More →</a>
@@ -307,15 +334,15 @@
                         <p class="text-gray-600 mb-6">Strategic AI implementation and transformation for enterprises</p>
                         <ul class="space-y-2 text-gray-600 mb-6">
                             <li class="flex items-start">
-                                <span class="text-purple-500 mr-2">✓</span>
+                                <span class="text-purple-500 mr-2">✔</span>
                                 <span>AI strategy development</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-purple-500 mr-2">✓</span>
+                                <span class="text-purple-500 mr-2">✔</span>
                                 <span>Custom AI solutions</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-purple-500 mr-2">✓</span>
+                                <span class="text-purple-500 mr-2">✔</span>
                                 <span>Implementation support</span>
                             </li>
                         </ul>
@@ -331,15 +358,15 @@
                         <p class="text-gray-600 mb-6">End-to-end AI application development and deployment</p>
                         <ul class="space-y-2 text-gray-600 mb-6">
                             <li class="flex items-start">
-                                <span class="text-green-500 mr-2">✓</span>
+                                <span class="text-green-500 mr-2">✔</span>
                                 <span>Custom AI applications</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-green-500 mr-2">✓</span>
+                                <span class="text-green-500 mr-2">✔</span>
                                 <span>MLOps & AIOps</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-green-500 mr-2">✓</span>
+                                <span class="text-green-500 mr-2">✔</span>
                                 <span>Cloud deployment</span>
                             </li>
                         </ul>
@@ -356,296 +383,411 @@
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                        Professional <span class="gradient-text">Training Programs</span>
+                        Your AI Learning <span class="gradient-text">Journey</span>
                     </h2>
-                    <p class="text-xl text-gray-600">Choose your path to AI/ML mastery</p>
+                    <p class="text-xl text-gray-600">Start with foundations, then choose your specialization path</p>
                 </div>
 
-                <!-- Programs Container with both programs visible -->
-                <div class="space-y-8">
-                    <!-- AI Tools Mastery Program -->
-                    <div class="program-block">
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                            <div class="bg-gradient-to-r from-pink-500 to-purple-500 p-6 text-white">
-                                <div class="flex items-center justify-between mb-2">
-                                    <h3 class="text-2xl font-bold">AI Tools Mastery</h3>
-                                    <span class="bg-white/20 px-3 py-1 rounded-full text-sm">12 Weeks</span>
-                                </div>
-                                <p class="text-white/90">Master Gen AI concepts & tools without coding</p>
+                <!-- Learning Path Visualization -->
+                <div class="mb-16">
+                    <!-- Foundation Course -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
+                        <div class="bg-gradient-to-r from-indigo-500 to-blue-500 p-6 text-white">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-2xl font-bold">AI Overview Module</h3>
+                                <span class="bg-white/20 px-3 py-1 rounded-full text-sm">4 Weeks • Foundation</span>
                             </div>
-
-                            <div class="p-6">
-                                <div class="mb-6">
-                                    <h4 class="font-semibold text-gray-900 mb-3">Program Highlights:</h4>
-                                    <ul class="space-y-2 text-gray-600 text-sm">
-                                        <li class="flex items-start">
-                                            <span class="text-purple-500 mr-2">✓</span>
-                                            <span>Generative AI fundamentals & tools</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-purple-500 mr-2">✓</span>
-                                            <span>Machine Learning & Deep Learning basics</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-purple-500 mr-2">✓</span>
-                                            <span>Prompt engineering & Agentic AI</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-purple-500 mr-2">✓</span>
-                                            <span>Text, image, video & audio generation</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-purple-500 mr-2">✓</span>
-                                            <span>AI ethics, safety & industry applications</span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <button data-curriculum="tools" class="curriculum-btn w-full bg-purple-100 text-purple-700 py-3 rounded-lg font-semibold hover:bg-purple-200 transition">
-                                    View Full Curriculum <span class="arrow-icon inline-block">↓</span>
-                                </button>
-                            </div>
+                            <p class="text-white/90">Master AI/ML concepts before diving into hands-on work</p>
                         </div>
 
-                        <!-- AI Tools Mastery Curriculum (Hidden by default) -->
-                        <div id="tools-curriculum" class="curriculum-section mt-6">
-                            <div class="bg-white rounded-2xl shadow-lg p-8 border-2 border-purple-200">
-                                <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Tools Mastery - 12 Week Curriculum</h3>
-                                <div class="space-y-4">
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 1: Basics of Generative AI & AI Tools</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Overview of Gen AI, differences from traditional AI, introduction to Claude, ChatGPT, and Gemini</p>
-                                        </div>
+                        <div class="p-6">
+                            <div class="mb-6">
+                                <h4 class="font-semibold text-gray-900 mb-3">Foundation Topics:</h4>
+                                <ul class="space-y-2 text-gray-600 text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-indigo-500 mr-2">✔</span>
+                                        <span><strong>Week 1:</strong> Foundations of AI - AI vs ML vs Deep Learning, Generative AI</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-indigo-500 mr-2">✔</span>
+                                        <span><strong>Week 2:</strong> Advanced AI Concepts Part 1 - Foundation Models, Prompt Engineering, RAG</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-indigo-500 mr-2">✔</span>
+                                        <span><strong>Week 3:</strong> Advanced AI Concepts Part 2 - AI Agents, Orchestration, Guardrails</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-indigo-500 mr-2">✔</span>
+                                        <span><strong>Week 4:</strong> AI in Practice - Tools landscape, business applications, ethics</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button data-curriculum="foundation" class="curriculum-btn w-full bg-indigo-100 text-indigo-700 py-3 rounded-lg font-semibold hover:bg-indigo-200 transition">
+                                View Detailed Curriculum <span class="arrow-icon inline-block">↓</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Foundation Curriculum (Hidden by default) -->
+                    <div id="foundation-curriculum" class="curriculum-section mb-8">
+                        <div class="bg-white rounded-2xl shadow-lg p-8 border-2 border-indigo-200">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Overview Module - 4 Week Foundation</h3>
+                            <div class="space-y-4">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="bg-indigo-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-indigo-900">Week 1: Foundations of AI</h4>
+                                        <p class="text-sm text-gray-600 mt-1"><strong>AI Concepts:</strong> Artificial Intelligence vs Machine Learning vs Deep Learning, Natural Language Processing (NLP) basics, Generative AI: what it is and why it matters</p>
+                                        <p class="text-sm text-gray-600 mt-1"><strong>Key Outcome:</strong> Understand core terminology, where AI is applied, and how Generative AI differs from traditional ML</p>
                                     </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 2: Machine Learning Fundamentals</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Supervised vs unsupervised learning, model evaluation, and bias in AI</p>
-                                        </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="bg-indigo-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-indigo-900">Week 2: Advanced AI Concepts (Part 1)</h4>
+                                        <p class="text-sm text-gray-600 mt-1">Foundation Models (GPT, Gemini, Claude, LLaMA), Prompt Engineering techniques, Context Engineering, LLM Hallucinations, RAG basics, Finetuning & RLHF</p>
+                                        <p class="text-sm text-gray-600 mt-1"><strong>Key Outcome:</strong> Gain insight into how large models are built, used, and adapted for specific needs</p>
                                     </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 3: Deep Learning Basics</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Neural networks, transformers, and how they power modern AI systems</p>
-                                        </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="bg-indigo-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-indigo-900">Week 3: Advanced AI Concepts (Part 2)</h4>
+                                        <p class="text-sm text-gray-600 mt-1">AI Agents & Agentic AI, AI Orchestration (LangChain, LangGraph, LlamaIndex), AI Gateways, AI Guardrails, Inference & Optimization, MCP/A2A (Model Context Protocol, Agent-to-Agent)</p>
+                                        <p class="text-sm text-gray-600 mt-1"><strong>Key Outcome:</strong> Understand how advanced AI systems are structured and controlled in production environments</p>
                                     </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 4: Prompt Engineering Fundamentals</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Writing effective prompts for better results; single-turn vs multi-turn prompts</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 5: Agentic AI & Multi-Tool Workflows</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Understanding AI agents, chaining tools together, and automating complex tasks</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 6: Text-to-Image & Multimedia Generation</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Creating visual content, editing images, and using AI for design</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 7: Text-to-Video & Audio Generation</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Producing videos, music, and realistic voiceovers with AI</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 8: AI Ethics & Safety</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Identifying misinformation, detecting deepfakes, and responsible AI usage</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 9: AI for Research & Knowledge Work</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Using AI to search, summarize, and synthesize information efficiently</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 10: AI in Industries</h4>
-                                            <p class="text-sm text-gray-600 mt-1">How AI is transforming marketing, healthcare, education, and creative industries</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 11: Portfolio Assembly</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Organizing and polishing outputs into a cohesive creative portfolio</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-purple-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-purple-900">Week 12: Final Presentation</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Sharing and reviewing completed projects</p>
-                                        </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="bg-indigo-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-indigo-900">Week 4: AI in Practice</h4>
+                                        <p class="text-sm text-gray-600 mt-1"><strong>AI Tools & Development:</strong> SaaS platforms, Low-code/No-code solutions, Pro-code frameworks, "Vibe Coding" tools</p>
+                                        <p class="text-sm text-gray-600 mt-1"><strong>Business Applications:</strong> Use cases across industries, ROI evaluation, ethical and regulatory considerations</p>
+                                        <p class="text-sm text-gray-600 mt-1"><strong>Key Outcome:</strong> Identify tools for your role and design simple AI-driven solutions</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- AI Engineering Program -->
-                    <div class="program-block">
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                            <div class="bg-gradient-to-r from-blue-500 to-indigo-500 p-6 text-white">
-                                <div class="flex items-center justify-between mb-2">
-                                    <h3 class="text-2xl font-bold">AI Engineering</h3>
-                                    <span class="bg-white/20 px-3 py-1 rounded-full text-sm">14 Weeks</span>
+                    <!-- Path Arrow -->
+                    <div class="flex justify-center">
+                        <div class="path-arrow"></div>
+                    </div>
+
+                    <!-- Choose Your Path -->
+                    <div class="text-center mb-8">
+                        <div class="inline-flex items-center bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-semibold">
+                            <span class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>
+                            Choose Your Specialization Path
+                        </div>
+                    </div>
+
+                    <!-- Two Paths -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Low-Code/No-Code Track -->
+                        <div class="program-block">
+                            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                                <div class="bg-gradient-to-r from-pink-500 to-purple-500 p-6 text-white">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <h3 class="text-2xl font-bold">Low-Code/No-Code Track</h3>
+                                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">8 Weeks</span>
+                                    </div>
+                                    <p class="text-white/90">Master GenAI tools without coding</p>
                                 </div>
-                                <p class="text-white/90">Build & deploy full-stack AI applications</p>
+
+                                <div class="p-6">
+                                    <div class="mb-6">
+                                        <h4 class="font-semibold text-gray-900 mb-3">Track Highlights:</h4>
+                                        <ul class="space-y-2 text-gray-600 text-sm">
+                                            <li class="flex items-start">
+                                                <span class="text-purple-500 mr-2">✔</span>
+                                                <span>GenAI Chat Platforms & Prompting</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-purple-500 mr-2">✔</span>
+                                                <span>Generative Imagery & Multimedia</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-purple-500 mr-2">✔</span>
+                                                <span>Automation with AI (Zapier/Make)</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-purple-500 mr-2">✔</span>
+                                                <span>Productivity Copilots</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-purple-500 mr-2">✔</span>
+                                                <span>No-Code Agents & Chatbots</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-purple-500 mr-2">✔</span>
+                                                <span>Capstone project</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <button data-curriculum="lowcode" class="curriculum-btn w-full bg-purple-100 text-purple-700 py-3 rounded-lg font-semibold hover:bg-purple-200 transition">
+                                        View Full Curriculum <span class="arrow-icon inline-block">↓</span>
+                                    </button>
+                                </div>
                             </div>
 
-                            <div class="p-6">
-                                <div class="mb-6">
-                                    <h4 class="font-semibold text-gray-900 mb-3">Program Highlights:</h4>
-                                    <ul class="space-y-2 text-gray-600 text-sm">
-                                        <li class="flex items-start">
-                                            <span class="text-blue-500 mr-2">✓</span>
-                                            <span>Python & Machine Learning fundamentals</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-blue-500 mr-2">✓</span>
-                                            <span>Backend development with FastAPI</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-blue-500 mr-2">✓</span>
-                                            <span>RAG pipelines & vector databases</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-blue-500 mr-2">✓</span>
-                                            <span>Frontend with React</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-blue-500 mr-2">✓</span>
-                                            <span>Cloud deployment & AIOps with AWS</span>
-                                        </li>
-                                    </ul>
+                            <!-- Low-Code Curriculum (Hidden by default) -->
+                            <div id="lowcode-curriculum" class="curriculum-section mt-6">
+                                <div class="bg-white rounded-2xl shadow-lg p-8 border-2 border-purple-200">
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Low-Code/No-Code Track - 8 Week Curriculum</h3>
+                                    <div class="space-y-4">
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-purple-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-purple-900">Week 1: GenAI Chat Platforms & Prompting</h4>
+                                                <p class="text-sm text-gray-600 mt-1">ChatGPT, Claude, Gemini basics; system vs user prompts; structured outputs</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Create high-quality prompts; compare model strengths; produce repeatable outputs</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-purple-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-purple-900">Week 2: Generative Imagery & Multimedia</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Midjourney, DALL·E, Adobe Firefly; prompt patterns; basic editing; licensing & ethics</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Design on-brand images/video snippets with clear prompt recipes</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-purple-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-purple-900">Week 3: Automation with AI</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Zapier/Make: triggers, actions, webhooks; plugging LLM steps into workflows</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Build end-to-end no-code automations that use LLMs for summarization, drafting, tagging</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-purple-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-purple-900">Week 4: Productivity Copilots</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Notion AI, Microsoft Copilot, Google Workspace AI; meeting notes, doc drafting, analysis</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Integrate AI into daily ops; create repeatable business templates</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-purple-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-purple-900">Week 5: No-Code Agents & Chatbots</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Flowise/LangFlow builders; Replit Agents; knowledge-base bots from PDFs/URLs</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Ship a domain FAQ bot with retrieval and basic tools (web, calculator)</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-purple-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-purple-900">Week 6: Data & Evaluations for No-Code</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Dataset prep, chunking basics, prompt tests, red-team checks; privacy settings</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Improve accuracy, reduce hallucinations, and protect data</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-purple-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-purple-900">Week 7: Capstone Build Sprint</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Plan & implement a real workflow/app (marketing, support, research assistant, etc.)</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Deliver an MVP integrating 2–3 tools (chat+automation+KB)</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-purple-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-purple-900">Week 8: Capstone Demo & Review</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Present solution, lessons learned, ROI & risk discussion</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Communicate impact; document runbook for handoff</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <button data-curriculum="engineering" class="curriculum-btn w-full bg-blue-100 text-blue-700 py-3 rounded-lg font-semibold hover:bg-blue-200 transition">
-                                    View Full Curriculum <span class="arrow-icon inline-block">↓</span>
-                                </button>
                             </div>
                         </div>
 
-                        <!-- AI Engineering Curriculum (Hidden by default) -->
-                        <div id="engineering-curriculum" class="curriculum-section mt-6">
-                            <div class="bg-white rounded-2xl shadow-lg p-8 border-2 border-blue-200">
-                                <h3 class="text-2xl font-bold text-gray-900 mb-6">AI Engineering - 14 Week Curriculum</h3>
-                                <div class="space-y-4">
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 1: Python Setup & Intro to ML</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Development environment setup, Python basics, and ML concepts</p>
-                                        </div>
+                        <!-- Pro-Code Engineering Track -->
+                        <div class="program-block">
+                            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                                <div class="bg-gradient-to-r from-blue-500 to-indigo-500 p-6 text-white">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <h3 class="text-2xl font-bold">Pro-Code AI Engineering</h3>
+                                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">16 Weeks</span>
                                     </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 2: APIs & Data Ingestion</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Pulling real-time and batch data from APIs and external sources</p>
-                                        </div>
+                                    <p class="text-white/90">Build & deploy full-stack AI applications</p>
+                                </div>
+
+                                <div class="p-6">
+                                    <div class="mb-6">
+                                        <h4 class="font-semibold text-gray-900 mb-3">Track Highlights:</h4>
+                                        <ul class="space-y-2 text-gray-600 text-sm">
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2">✔</span>
+                                                <span>Python & ML engineering</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2">✔</span>
+                                                <span>Backend with FastAPI</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2">✔</span>
+                                                <span>RAG pipelines & vector databases</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2">✔</span>
+                                                <span>Frontend with React</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2">✔</span>
+                                                <span>Docker & Kubernetes</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2">✔</span>
+                                                <span>Cloud deployment & AIOps</span>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 3: Backend with FastAPI</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Building API endpoints for AI-powered features</p>
+
+                                    <button data-curriculum="procode" class="curriculum-btn w-full bg-blue-100 text-blue-700 py-3 rounded-lg font-semibold hover:bg-blue-200 transition">
+                                        View Full Curriculum <span class="arrow-icon inline-block">↓</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Pro-Code Curriculum (Hidden by default) -->
+                            <div id="procode-curriculum" class="curriculum-section mt-6">
+                                <div class="bg-white rounded-2xl shadow-lg p-8 border-2 border-blue-200">
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Pro-Code AI Engineering - 16 Week Curriculum</h3>
+                                    <div class="space-y-4">
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 1: Python & ML Essentials</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Env setup, git, NumPy/Pandas, scikit-learn refresher</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Productive dev setup; implement simple ML pipeline</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 4: Database Management with PostgreSQL</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Structuring and storing application data</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 2: Data Ingestion & APIs</h4>
+                                                <p class="text-sm text-gray-600 mt-1">REST/GraphQL, async I/O, ETL patterns, cleaning</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Robust data loaders from APIs/files</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 5: Vector Search & Embeddings</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Understanding embeddings, similarity search, and using vector databases</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 3: Backend with FastAPI</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Routes, Pydantic, error/logging, testing</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Ship a clean AI-ready REST API</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 6: Retrieval-Augmented Generation (RAG) Pipeline</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Integrating AI models with retrieval to answer questions from custom data</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 4: Databases (PostgreSQL)</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Schema design, SQLAlchemy, CRUD, migrations</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Persist users, sessions, logs, configs</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 7: Frontend with React</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Designing a user interface for your AI app</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 5: Embeddings & Vector Search</h4>
+                                                <p class="text-sm text-gray-600 mt-1">OpenAI/HF embeddings; pgvector/Chroma/Pinecone</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Build semantic search over documents</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 8: Full-Stack Integration</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Connecting frontend, backend, and AI services</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 6: RAG Pipeline</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Chunking, retrieval, re-ranking; LangChain/LlamaIndex chains</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Ground LLM answers with citations</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 9: Containerization (Docker)</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Packaging applications for portability</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 7: Frontend (React) for AI UX</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Chat UIs, streaming, state mgmt, auth flows</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Usable AI app frontends</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 10: Cloud Deployment (Kubernetes)</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Deploying and managing services in the cloud</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 8: Full-Stack Integration</h4>
+                                                <p class="text-sm text-gray-600 mt-1">CORS, SSE/WebSocket streaming, E2E tests</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Smooth API↔UI data flow</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 11: AWS AIOps Integration</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Automating AI operations: monitoring, anomaly detection, and performance optimization</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 9: Docker & Compose</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Dockerfiles, multi-stage builds, env/secrets</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Reproducible containers for all services</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 12: Security & Authentication</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Protecting your app and managing user access</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 10: Kubernetes Basics</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Deployments/Services/Ingress; configs; autoscaling intro</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Run the app reliably on K8s</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 13: Scaling & Optimization</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Performance tuning, autoscaling, and cost management</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 11: Cloud Deployment (AWS/GCP) & CI/CD</h4>
+                                                <p class="text-sm text-gray-600 mt-1">EKS/GKE or Cloud Run; GitHub Actions pipelines; secrets managers</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Push-button deploys to cloud</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="timeline-dot"></div>
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold text-blue-900">Week 14: Final Project Launch & Presentation</h4>
-                                            <p class="text-sm text-gray-600 mt-1">Deploy and demo your full AI application</p>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 12: AIOps/MLOps & Observability</h4>
+                                                <p class="text-sm text-gray-600 mt-1">OpenTelemetry, Prometheus/Grafana; model/version registry; data drift</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Monitor, alert, and iterate models & prompts</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 13: Security & Guardrails</h4>
+                                                <p class="text-sm text-gray-600 mt-1">OAuth/JWT, rate-limits, input validation; prompt-injection defenses; PII handling</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Ship safer AI apps with policy checks</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 14: Performance & Cost Optimization</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Caching, batching, async; model selection/quantization; autoscaling</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Faster responses, lower spend</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 15: Capstone Build Sprint (Pro-Code)</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Team architecture, milestones, staging deploy</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Production-grade LLM/RAG app</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="bg-blue-50 p-4 rounded-lg">
+                                                <h4 class="font-semibold text-blue-900">Week 16: Capstone Launch & Presentation</h4>
+                                                <p class="text-sm text-gray-600 mt-1">Final cloud deploy, load test, demo, post-mortem</p>
+                                                <p class="text-sm text-gray-600 mt-1"><strong>Outcome:</strong> Operable app with docs, runbook, and roadmap</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -864,13 +1006,13 @@
         </div>
     </section>
 
-    <!-- Schedule & Pricing -->
+    <!-- Schedule -->
     <section class="py-20 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
         <div class="container mx-auto px-4">
             <div class="max-w-5xl mx-auto">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-bold mb-4">Flexible Learning Options</h2>
-                    <p class="text-xl opacity-90">Join from anywhere in the world • Live online sessions • Recorded lectures</p>
+                    <p class="text-xl opacity-90">Join from Long Island, NY or attend online • Live sessions • Recorded lectures</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 mb-12">
@@ -887,28 +1029,28 @@
                                 <p class="text-white/80">Saturday & Sunday: 7:00 AM - 2:00 PM EST</p>
                             </div>
                             <div class="pt-4 border-t border-white/20">
-                                <p class="text-white/80 text-sm">✓ All sessions recorded for review</p>
-                                <p class="text-white/80 text-sm">✓ 24/7 access to course materials</p>
-                                <p class="text-white/80 text-sm">✓ Dedicated Slack community</p>
+                                <p class="text-white/80 text-sm">✔ In-person option in Long Island, NY</p>
+                                <p class="text-white/80 text-sm">✔ Online attendance available</p>
+                                <p class="text-white/80 text-sm">✔ All sessions recorded for review</p>
+                                <p class="text-white/80 text-sm">✔ Dedicated Slack community</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Pricing Info -->
+                    <!-- Program Info -->
                     <div class="bg-white/10 backdrop-blur rounded-xl p-8">
-                        <h3 class="text-2xl font-bold mb-6">Investment</h3>
+                        <h3 class="text-2xl font-bold mb-6">Program Duration</h3>
                         <div class="space-y-4">
                             <div class="bg-white/20 rounded-lg p-4">
-                                <h4 class="font-semibold text-lg">AI Tools Mastery</h4>
-                                <p class="text-3xl font-bold mt-2">$300</p>
-                                <p class="text-white/80 text-sm">12-week program</p>
+                                <h4 class="font-semibold text-lg">Foundation + Low-Code Track</h4>
+                                <p class="text-2xl font-bold mt-1">12 Weeks Total</p>
+                                <p class="text-white/80 text-sm">4 weeks foundation + 8 weeks hands-on</p>
                             </div>
                             <div class="bg-white/20 rounded-lg p-4">
-                                <h4 class="font-semibold text-lg">AI Engineering</h4>
-                                <p class="text-3xl font-bold mt-2">$500</p>
-                                <p class="text-white/80 text-sm">14-week program</p>
+                                <h4 class="font-semibold text-lg">Foundation + Pro-Code Track</h4>
+                                <p class="text-2xl font-bold mt-1">20 Weeks Total</p>
+                                <p class="text-white/80 text-sm">4 weeks foundation + 16 weeks hands-on</p>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -916,7 +1058,7 @@
                 <div class="text-center">
                     <p class="text-xl mb-6">Next Cohort Starts January 2026</p>
                     <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition inline-block">
-                        Enroll Now
+                        Reserve Your Spot
                     </a>
                 </div>
             </div>
@@ -963,6 +1105,19 @@
                                     <p class="font-semibold text-gray-900">+1-516-851-0898</p>
                                 </div>
                             </a>
+
+                            <div class="flex items-center p-4 bg-white rounded-lg">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">Location</p>
+                                    <p class="font-semibold text-gray-900">Long Island, NY or Online</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="mt-6 p-4 bg-blue-100 rounded-lg">
@@ -991,8 +1146,8 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Interest</label>
                                     <select name="interest" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                        <option>AI Tools Mastery Training</option>
-                                        <option>AI Engineering Training</option>
+                                        <option>AI Foundation + Low-Code Track</option>
+                                        <option>AI Foundation + Pro-Code Engineering</option>
                                         <option>Consultancy Services</option>
                                         <option>Corporate Training</option>
                                     </select>
@@ -1024,13 +1179,28 @@
 
                 <div class="space-y-4">
                     <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Do I need coding experience for the AI Tools Mastery program?</h3>
-                        <p class="text-gray-600">No coding experience is required for the AI Tools Mastery program. It's designed for beginners and focuses on using AI tools without programming.</p>
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Do I need to take the foundation course?</h3>
+                        <p class="text-gray-600">Yes, the 4-week AI Overview module is mandatory for all students. It provides essential conceptual understanding needed for both the low-code and pro-code tracks.</p>
                     </div>
 
                     <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Can I join from outside the United States?</h3>
-                        <p class="text-gray-600">Yes! Our programs are 100% online and designed for a global audience. We have students from over 20 countries.</p>
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Can I switch tracks after starting?</h3>
+                        <p class="text-gray-600">You can decide on your track after completing the 4-week foundation course. However, once you begin either the low-code or pro-code track, we recommend completing it for the best learning experience.</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Do I need coding experience for the low-code track?</h3>
+                        <p class="text-gray-600">No coding experience is required for the low-code/no-code track. It's designed to teach you how to leverage AI tools without programming.</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">What prerequisites are needed for the pro-code track?</h3>
+                        <p class="text-gray-600">Basic programming knowledge is helpful but not required. We'll teach Python from scratch in the pro-code track, though familiarity with any programming language will help you progress faster.</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Can I switch between in-person and online?</h3>
+                        <p class="text-gray-600">Yes! Students can flexibly switch between in-person attendance in Long Island, NY and online participation based on their schedule and preferences. All sessions are recorded regardless of format.</p>
                     </div>
 
                     <div class="bg-white rounded-lg p-6 shadow-sm">
@@ -1081,24 +1251,26 @@
                     <div>
                         <h4 class="font-semibold text-white mb-4">Programs</h4>
                         <ul class="space-y-2 text-sm">
-                            <li><a href="#training" class="hover:text-white transition">AI Tools Mastery</a></li>
-                            <li><a href="#training" class="hover:text-white transition">AI Engineering</a></li>
-                            <li><a href="#contact" class="hover:text-white transition">Custom Solutions</a></li>
+                            <li><a href="#training" class="hover:text-white transition">AI Foundation</a></li>
+                            <li><a href="#training" class="hover:text-white transition">Low-Code Track</a></li>
+                            <li><a href="#training" class="hover:text-white transition">Pro-Code Engineering</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 class="font-semibold text-white mb-4">Contact</h4>
                         <ul class="space-y-2 text-sm">
+                            <li>AIML Consultancy LLC</li>
                             <li>Email: contact@AIMLEngineers.com</li>
                             <li>Phone: +1-516-851-0898</li>
+                            <li>Location: Long Island, NY</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="border-t border-gray-800 pt-8 text-center">
                     <p class="text-sm">
-                        © 2025 AIMLEngineers.com All rights reserved. |
+                        © 2025 AIMLEngineers.com "AIML Consultancy LLC" All rights reserved. |
                         <a href="#" class="hover:text-white transition">Privacy Policy</a> |
                         <a href="#" class="hover:text-white transition">Terms of Service</a>
                     </p>
@@ -1123,48 +1295,71 @@
         });
 
         function toggleCurriculum(type) {
-            const toolsCurriculum = document.getElementById('tools-curriculum');
-            const engineeringCurriculum = document.getElementById('engineering-curriculum');
+            const foundationCurriculum = document.getElementById('foundation-curriculum');
+            const lowcodeCurriculum = document.getElementById('lowcode-curriculum');
+            const procodeCurriculum = document.getElementById('procode-curriculum');
 
             // Get the buttons and their arrow elements
-            const toolsBtn = document.querySelector('[data-curriculum="tools"]');
-            const engineeringBtn = document.querySelector('[data-curriculum="engineering"]');
+            const foundationBtn = document.querySelector('[data-curriculum="foundation"]');
+            const lowcodeBtn = document.querySelector('[data-curriculum="lowcode"]');
+            const procodeBtn = document.querySelector('[data-curriculum="procode"]');
 
-            const toolsArrow = toolsBtn ? toolsBtn.querySelector('.arrow-icon') : null;
-            const engineeringArrow = engineeringBtn ? engineeringBtn.querySelector('.arrow-icon') : null;
+            const foundationArrow = foundationBtn ? foundationBtn.querySelector('.arrow-icon') : null;
+            const lowcodeArrow = lowcodeBtn ? lowcodeBtn.querySelector('.arrow-icon') : null;
+            const procodeArrow = procodeBtn ? procodeBtn.querySelector('.arrow-icon') : null;
 
-            if (type === 'tools' && toolsCurriculum) {
-                // Toggle tools curriculum
-                if (toolsCurriculum.classList.contains('active')) {
-                    toolsCurriculum.classList.remove('active');
-                    if (toolsArrow) toolsArrow.classList.remove('rotated');
+            if (type === 'foundation' && foundationCurriculum) {
+                // Toggle foundation curriculum
+                if (foundationCurriculum.classList.contains('active')) {
+                    foundationCurriculum.classList.remove('active');
+                    if (foundationArrow) foundationArrow.classList.remove('rotated');
                 } else {
-                    toolsCurriculum.classList.add('active');
-                    if (toolsArrow) toolsArrow.classList.add('rotated');
-                    // Hide engineering curriculum if open
-                    if (engineeringCurriculum) engineeringCurriculum.classList.remove('active');
-                    if (engineeringArrow) engineeringArrow.classList.remove('rotated');
+                    foundationCurriculum.classList.add('active');
+                    if (foundationArrow) foundationArrow.classList.add('rotated');
+                    // Hide other curricula
+                    if (lowcodeCurriculum) lowcodeCurriculum.classList.remove('active');
+                    if (procodeCurriculum) procodeCurriculum.classList.remove('active');
+                    if (lowcodeArrow) lowcodeArrow.classList.remove('rotated');
+                    if (procodeArrow) procodeArrow.classList.remove('rotated');
 
-                    // Smooth scroll to the curriculum section after a small delay
                     setTimeout(() => {
-                        toolsCurriculum.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        foundationCurriculum.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }, 100);
                 }
-            } else if (type === 'engineering' && engineeringCurriculum) {
-                // Toggle engineering curriculum
-                if (engineeringCurriculum.classList.contains('active')) {
-                    engineeringCurriculum.classList.remove('active');
-                    if (engineeringArrow) engineeringArrow.classList.remove('rotated');
+            } else if (type === 'lowcode' && lowcodeCurriculum) {
+                // Toggle lowcode curriculum
+                if (lowcodeCurriculum.classList.contains('active')) {
+                    lowcodeCurriculum.classList.remove('active');
+                    if (lowcodeArrow) lowcodeArrow.classList.remove('rotated');
                 } else {
-                    engineeringCurriculum.classList.add('active');
-                    if (engineeringArrow) engineeringArrow.classList.add('rotated');
-                    // Hide tools curriculum if open
-                    if (toolsCurriculum) toolsCurriculum.classList.remove('active');
-                    if (toolsArrow) toolsArrow.classList.remove('rotated');
+                    lowcodeCurriculum.classList.add('active');
+                    if (lowcodeArrow) lowcodeArrow.classList.add('rotated');
+                    // Hide other curricula
+                    if (foundationCurriculum) foundationCurriculum.classList.remove('active');
+                    if (procodeCurriculum) procodeCurriculum.classList.remove('active');
+                    if (foundationArrow) foundationArrow.classList.remove('rotated');
+                    if (procodeArrow) procodeArrow.classList.remove('rotated');
 
-                    // Smooth scroll to the curriculum section after a small delay
                     setTimeout(() => {
-                        engineeringCurriculum.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        lowcodeCurriculum.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, 100);
+                }
+            } else if (type === 'procode' && procodeCurriculum) {
+                // Toggle procode curriculum
+                if (procodeCurriculum.classList.contains('active')) {
+                    procodeCurriculum.classList.remove('active');
+                    if (procodeArrow) procodeArrow.classList.remove('rotated');
+                } else {
+                    procodeCurriculum.classList.add('active');
+                    if (procodeArrow) procodeArrow.classList.add('rotated');
+                    // Hide other curricula
+                    if (foundationCurriculum) foundationCurriculum.classList.remove('active');
+                    if (lowcodeCurriculum) lowcodeCurriculum.classList.remove('active');
+                    if (foundationArrow) foundationArrow.classList.remove('rotated');
+                    if (lowcodeArrow) lowcodeArrow.classList.remove('rotated');
+
+                    setTimeout(() => {
+                        procodeCurriculum.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }, 100);
                 }
             }
