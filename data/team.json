@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Kamaljeet Kharbanda",
+        "role": "AI Advisor",
+        "department": "Advisors",
+        "bio": "Technology leader by day, AI builder by night. 15+ years leading product delivery, platform engineering, and program execution across enterprise teams, Harvard Masters in Data Science/AI.\n\nBut what I love most is building. I personally architect and code multi-agent systems, RAG pipelines, and full-stack AI applications. ClassroomBot.ai, StockTickers.ai, AstrologyBot.ai are all personal projects I built because I wanted to, not because I had to.\n\nI started AIMLEngineers.com to help others navigate their AI journey. As an AI Advisor, I guide individuals and teams across three tracks: Everyone AI for getting started, Embedded AI for low-code builders, and Embrace AI for engineers who want to go deep with RAG, agents, MCP, and LangChain.\n\nI write about what I build. Published on multi-agent architectures, spec-driven development, and the consumer AI technology stack. If I'm not leading a product, running a program, or building a platform, I'm probably coding a side project or writing about one.",
+        "photo": "images/team/kk.png",
+        "linkedin": "https://www.linkedin.com/in/kamaljeetkharbanda/",
+        "color": "blue"
+    },
+    {
+        "name": "Ishveen Kaur",
+        "role": "Instructor — High School Program",
+        "department": "Instructors",
+        "bio": "A high school student who fell in love with AI early and never looked back. From GPU optimization and inference servers to deep learning and building real AI solutions with LangChain, she's already working with tools most professionals are still learning.\n\nShe joined AIMLEngineers.com as an Instructor for the High School Program because she wanted students her age to see AI the way she does: not as something distant or intimidating, but as something you can start building with today. If AI is the future, she's not waiting for it.",
+        "photo": "images/team/ik.png",
+        "linkedin": "https://medium.com/@ishveen",
+        "color": "indigo"
+    },
+    {
+        "name": "Sukhman Arora",
+        "role": "Instructor — AWS & Cloud Platforms",
+        "department": "Instructors",
+        "bio": "17 years old and already fluent in AWS. Cloud computing clicked early, and there was no turning back. From infrastructure design to deploying and scaling real-world applications, the focus has always been on building, not just learning.\n\nAt AIMLEngineers.com, the goal is simple: make cloud practical and accessible. Stop reading about AWS, start building on it. Every session is hands-on, every concept tied to something real.",
+        "photo": "images/team/sa.jpeg",
+        "linkedin": "https://www.linkedin.com/in/sukhman-singh-arora-38abaa353/",
+        "color": "yellow"
+    },
+    {
+        "name": "More Instructors Joining Soon",
+        "role": "We're Growing!",
+        "department": "Coming Soon",
+        "bio": "We're actively building our team of instructors across Claude, LangChain, NVIDIA, full-stack AI, and more. Interested in teaching with us? Reach out at info@aimlengineers.com.",
+        "photo": "",
+        "linkedin": "",
+        "color": "purple"
+    }
+]
