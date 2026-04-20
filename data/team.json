@@ -19,6 +19,15 @@
         "color": "yellow"
     },
     {
+    "name": "Prashant Kumar",
+    "role": "Instructor — Cloud Architecture & Engineering",
+    "department": "Instructors",
+    "bio": "A Solutions Architect and Engineering Lead at U.S. Bank with 17+ years of experience building and scaling cloud-native systems. From designing resilient architectures to leading engineering teams through large-scale digital transformation, his focus has always been on turning complex systems into something that actually works in the real world.\n\nHe holds a Master’s in Data Science from Harvard University and is AWS and Azure certified, bringing a strong mix of cloud, data, and AI/ML expertise. At AIMLEngineers.com, his goal is simple: help learners move beyond theory and start thinking like real architects, building systems that scale, perform, and deliver.",
+    "photo": "images/team/pk.png",
+    "linkedin": "https://www.linkedin.com/in/prashant4199/",
+    "color": "blue"
+    },
+    {
         "name": "More Instructors Joining Soon",
         "role": "We're Growing!",
         "department": "Coming Soon",
