@@ -1,5 +1,13 @@
 [
-
+    {
+        "name": "Kamaljeet Kharbanda",
+        "role": "AI Advisor",
+        "department": "Advisors",
+        "bio": "Technology leader by day, AI builder by night. 15+ years leading product delivery, platform engineering, and program execution across enterprise teams, Harvard Masters in Data Science/AI.\n\nBut what I love most is building. I personally architect and code multi-agent systems, RAG pipelines, and full-stack AI applications. ClassroomBot.ai, StockTickers.ai, AstrologyBot.ai are all personal projects I built because I wanted to, not because I had to.\n\nI started AIMLEngineers.com to help others navigate their AI journey. As an AI Advisor, I guide individuals and teams across three tracks: Everyone AI for getting started, Embedded AI for low-code builders, and Embrace AI for engineers who want to go deep with RAG, agents, MCP, and LangChain.\n\nI write about what I build. Published on multi-agent architectures, spec-driven development, and the consumer AI technology stack. If I'm not leading a product, running a program, or building a platform, I'm probably coding a side project or writing about one.",
+        "photo": "images/team/kk.png",
+        "linkedin": "https://www.linkedin.com/in/kamaljeetkharbanda/",
+        "color": "purple"
+    },
     {
         "name": "Ishveen Kaur",
         "role": "Instructor — High School Program",
@@ -25,7 +33,7 @@
     "bio": "A Solutions Architect and Engineering Lead at U.S. Bank with 17+ years of experience building and scaling cloud-native systems. From designing resilient architectures to leading engineering teams through large-scale digital transformation, his focus has always been on turning complex systems into something that actually works in the real world.\n\nHe holds a Master’s in Data Science from Harvard University and is AWS and Azure certified, bringing a strong mix of cloud, data, and AI/ML expertise. At AIMLEngineers.com, his goal is simple: help learners move beyond theory and start thinking like real architects, building systems that scale, perform, and deliver.",
     "photo": "images/team/pk.png",
     "linkedin": "https://www.linkedin.com/in/prashant4199/",
-    "color": "purple"
+    "color": "indigo"
     },
     {
         "name": "More Instructors Joining Soon",
