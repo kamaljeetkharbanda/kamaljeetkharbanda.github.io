@@ -36,6 +36,15 @@
     "color": "indigo"
     },
     {
+  "name": "Ibrahim Hashim",
+  "role": "AI Advisor",
+  "department": "Advisors",
+  "bio": "A data scientist and research statistician with a cross-disciplinary foundation spanning biomedical research, climate economics, and sustainability. With experience analyzing complex healthcare datasets, building predictive models, and translating data into real-world decisions, he brings a strong blend of analytical rigor and practical execution.\n\nHis work ranges from multivariate modeling and data visualization to hands-on experimentation with modern ML methods. He has taught statistical analysis, designed course content, and published peer-reviewed articles, giving him a strong ability to break down complex ideas into clear, actionable insights.",
+  "photo": "images/team/ih.png",
+  "linkedin": "https://www.linkedin.com/in/ibrahimhashim/",
+  "color": "yellow"
+},
+    {
         "name": "More Instructors Joining Soon",
         "role": "We're Growing!",
         "department": "Coming Soon",
